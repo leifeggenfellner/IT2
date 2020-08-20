@@ -1,0 +1,16 @@
+p {
+    border: 1px solid #000;
+    padding: 10px 5px;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+#new {
+    margin-right: 10px;
+    position: absolute;
+}
+
+#all {
+    position: absolute;
+    top: 5%;
+}
