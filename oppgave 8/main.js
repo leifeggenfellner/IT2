@@ -1,23 +1,7 @@
-if (!(25 % 5 == 1) === false) {
-    console.log(false);
-} else {
-    console.log(true);
-}
+!(25%5==1) ? console.log(true) : console.log(false);
 
-if ((true || !(false)) === false) {
-    console.log(false);
-} else {
-    console.log(true);
-}
+(true || !(false)) ? console.log(true) : console.log(false);
 
-if ((26 <= 17) === false) {
-    console.log(false);
-} else {
-    console.log(true);
-}
+26 <= 17 ? console.log(true) : console.log(false);
 
-if ((false || !(false || true)) === false) {
-    console.log(false);
-} else {
-    console.log(true);
-}
+(false || !(false || true)) ? console.log(true) : console.log(false);
