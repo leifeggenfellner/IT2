@@ -1,7 +1,7 @@
-function chessboard(size) {
+function board(size) {
     var output = "";
-    for (var i = 0; i < size; i++) {
-        for (var j = 0; j < size; j++) {
+    for (let i = 0; i < size; i++) {
+        for (let j = 0; j < size; j++) {
             output += i % 2 === j % 2 ? " " : "*";
         }
 
@@ -9,5 +9,3 @@ function chessboard(size) {
     }
     return output;
 }
-
-console.log(chessboard(8));
