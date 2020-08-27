@@ -9,6 +9,4 @@ function board(size) {
     i < size - 1 ? (output += "\n") : "";
   }
   return output;
-}
-
-console.log(board(8));
+};
