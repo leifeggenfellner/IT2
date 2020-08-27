@@ -11,7 +11,7 @@ let nums = [];
 
 
 function addNum() {
-    if (input.value != "") {
+    if (!input.value == "") {
         num = parseFloat(input.value);
         nums.push(num);
     }
