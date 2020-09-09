@@ -1,62 +1,63 @@
-body,
-html {
-    margin: 0;
-    padding: 0;
-}
+  @font-face {
+      font-family: pixel;
+      src: url(./fonts/W95FA.otf);
+  }
 
-#gameBoard {
-    margin-left: 5px;
-    margin-top: 5px;
-    width: 320px;
-    height: 200px;
+  * {
+      font-family: pixel;
+  }
 
-    border: solid 4px #000;
+  body,
+  html {
+      padding: 0;
+      margin: 0;
+  }
 
-}
+  h1 {
+      display: inline-block;
+      position: absolute;
+      font-size: 26px;
+  }
 
-#gameBoard:before {
-    left: 13%;
-    content: '';
-    width: 8px;
-    height: 200px;
-    position: absolute;
-    border-left: 4px dashed #000;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-}
+  #rightScore {
+      right: 72px;
+  }
 
-#leftPaddle {
-    position: relative;
-    left: 2%;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-}
+  #leftScore {
+      left: 72px;
+  }
 
-#rightPaddle {
-    position: relative;
-    left: 84%;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-}
+  #myCanvas {
+      position: relative;
+      height: 200px;
+      width: 320px;
+      border: 2px solid #000;
+  }
 
-#ball {
-    position: relative;
-    left: 45%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-}
+  #myCanvas:before {
+      left: 50%;
+      content: '';
+      width: 10px;
+      height: 200px;
+      position: absolute;
+      border-left: 3px dashed #000;
+  }
+
+  #leftPaddle {
+      position: absolute;
+      left: 5px;
+      top: 71px;
+
+  }
+
+  #ball {
+      position: absolute;
+      left: 152.5px;
+      top: 92.5px;
+  }
+
+  #rightPaddle {
+      position: absolute;
+      right: 5px;
+      top: 71px;
+  }
