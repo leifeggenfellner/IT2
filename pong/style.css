@@ -1,0 +1,25 @@
+#myCanvas {
+    position: relative;
+    height: 200px;
+    width: 320px;
+    border: 2px solid #000;
+}
+
+#leftPaddle {
+    position: absolute;
+    left: 5px;
+    top: 71px;
+    
+}
+
+#ball {
+    position: absolute;
+    left: 152.5px;
+    top: 92.5px;
+}
+
+#rightPaddle {
+    position: absolute;
+    left: 303.5px;
+    top: 71px;
+}
