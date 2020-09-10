@@ -1,25 +1,63 @@
-#myCanvas {
-    position: relative;
-    height: 200px;
-    width: 320px;
-    border: 2px solid #000;
-}
+  @font-face {
+      font-family: pixel;
+      src: url(./fonts/W95FA.otf);
+  }
 
-#leftPaddle {
-    position: absolute;
-    left: 5px;
-    top: 71px;
-    
-}
+  * {
+      font-family: pixel;
+  }
 
-#ball {
-    position: absolute;
-    left: 152.5px;
-    top: 92.5px;
-}
+  body,
+  html {
+      padding: 0;
+      margin: 0;
+  }
 
-#rightPaddle {
-    position: absolute;
-    left: 303.5px;
-    top: 71px;
-}
+  h1 {
+      display: inline-block;
+      position: absolute;
+      font-size: 26px;
+  }
+
+  #rightScore {
+      right: 72px;
+  }
+
+  #leftScore {
+      left: 72px;
+  }
+
+  #myCanvas {
+      position: relative;
+      height: 200px;
+      width: 320px;
+      border: 2px solid #000;
+  }
+
+  #myCanvas:before {
+      left: 50%;
+      content: '';
+      width: 10px;
+      height: 200px;
+      position: absolute;
+      border-left: 3px dashed #000;
+  }
+
+  #leftPaddle {
+      position: absolute;
+      left: 5px;
+      top: 71px;
+
+  }
+
+  #ball {
+      position: absolute;
+      left: 152.5px;
+      top: 92.5px;
+  }
+
+  #rightPaddle {
+      position: absolute;
+      right: 5px;
+      top: 71px;
+  }
