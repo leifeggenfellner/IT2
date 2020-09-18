@@ -43,7 +43,7 @@
       border-left: 3px dashed #000;
   }
 
-  #leftPaddle {
+  #player {
       position: absolute;
       left: 5px;
       top: 71px;
@@ -56,7 +56,7 @@
       top: 92.5px;
   }
 
-  #rightPaddle {
+  #bot {
       position: absolute;
       right: 5px;
       top: 71px;
