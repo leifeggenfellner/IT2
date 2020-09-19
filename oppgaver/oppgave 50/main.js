@@ -11,8 +11,7 @@ function guessNumber() {
     } else if (guess > randomNum) {
         console.log("Number really do be lower doe");
         guessNumber();
-    }
-    else if (guess === randomNum) {
+    } else if (guess === randomNum) {
         guesses++;
         console.log("Yea, u kinda got it right doe");
         console.log(`You guessed ${guesses} times u little shit`);

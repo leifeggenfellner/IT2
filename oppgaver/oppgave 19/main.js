@@ -6,4 +6,3 @@ for (i = 10; i > 0; i--) {
   }
   str += "\n";
 }
-console.log(str);

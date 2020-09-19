@@ -309,7 +309,7 @@ function collision(player, missile) {
 
 const bgm = new Audio();
 bgm.src = "../sound/music.mp3";
-bgm.volume = 0.3;
+bgm.volume = 0.15;
 bgm.loop = true;
 
 const explosion = new Audio();

@@ -1,11 +1,13 @@
 let nums = new Array();
 
-for (let i = 0; i < 20; i++) {
+for (let i = 0; i < 10000; i++) {
     nums.push(Math.floor(Math.random() * 10000 + 1));
 }
 
 function merge(left, right) {
-    let resultArray = [], leftIndex = 0, rightIndex = 0;
+    let resultArray = [],
+        leftIndex = 0,
+        rightIndex = 0;
 
     while (leftIndex < left.length && rightIndex < right.length) {
         if (left[leftIndex] < right[rightIndex]) {
