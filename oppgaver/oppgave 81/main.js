@@ -1,0 +1,15 @@
+let a = (5 > 9);
+let b = (false || true);
+let c = (false && true);
+let d = (7 % 3 == 0);
+let e = (10 % 2 == 0 || (true || false));
+let f = (23 < 31);
+let g = (9 % 3 == 0 && (false || true));
+let h = ((5 < 6) || (6 > 5));
+let i = ((5 < 7) && !(2 < 1));
+let j = !(true);
+let k = !(15 / 7 == 6);
+let l = (!(true || false) || true);
+let m = !(false);
+let n = ((5 * 5) != 25);
+let o = (78 == 45 || 78 != 145);
