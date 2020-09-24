@@ -23,3 +23,5 @@ function pascal(row) {
 
     return triangle[row];
 }
+
+console.log(pascal(7));
