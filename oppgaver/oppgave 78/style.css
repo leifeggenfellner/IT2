@@ -1,0 +1,39 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 600px;
+    height: auto;
+    text-align: center;
+}
+
+#header {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 24px;
+    width: 100%;
+}
+
+#spanOutput {
+    font-size: 20px;
+    position: relative;
+    float: right;
+    margin-right: 35px;
+}
+
+#txtHeader {
+    float: left;
+    margin-left: 35px;
+}
+
+button {
+    display: block;
+    width: 400px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+}
