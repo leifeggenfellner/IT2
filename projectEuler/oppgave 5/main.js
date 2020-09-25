@@ -26,5 +26,3 @@ function smallestNum(n) {
     }
     return smallestNum;
 }
-
-console.log(smallestNum(20));
