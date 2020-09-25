@@ -1,4 +1,3 @@
-// Bad Original Code
 /**
  * 
  * @param {number} n 
