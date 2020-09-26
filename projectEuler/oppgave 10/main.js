@@ -27,5 +27,3 @@ function sumSieve(n) {
 
     return output.reduce((a, b) => a + b, 0);
 }
-
-console.log(sumSieve(2000000));
