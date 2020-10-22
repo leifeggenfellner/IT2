@@ -1,7 +1,7 @@
 let temp;
 let nums = new Array();
 
-for (let i = 0; i < 10000; i++) {
+for (let i = 0; i < 50; i++) {
     nums.push(Math.floor(Math.random() * 10000 + 1));
 }
 
