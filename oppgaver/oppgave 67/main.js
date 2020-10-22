@@ -1,8 +1,8 @@
 function pascalRecursive(n, arr) {
     if (n < 2) return arr;
-    var pr = arr[arr.length - 1];
-    var cr = [1];
-    for (var i = 1; i < pr.length; i++) {
+    let pr = arr[arr.length - 1];
+    let cr = [1];
+    for (let i = 1; i < pr.length; i++) {
         cr[i] = pr[i] + pr[i - 1];
     }
     cr.push(1);

@@ -15,5 +15,3 @@ function primeFactors(arr, num) {
     }
     return arr;
 }
-
-console.log(primeFactors(factors, 600851475143));
