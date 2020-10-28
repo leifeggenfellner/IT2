@@ -13,6 +13,8 @@ for (let i = 0; i < 6; i++) {
 ctx.stroke();
 
 btn.onclick = () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
     let arr = new Array(6);
     for (let i = 0; i < arr.length; i++) {
         arr[i] = new Array(6).fill(0);
@@ -42,7 +44,7 @@ btn.onclick = () => {
                 let sqaure = canvas.height / 6;
 
                 if (i < 6 && j < 6) {
-                    ctx.fillStyle = `rgb(${r * arr[i][j]}, 0, 0)`;
+                    ctx.fillStyle = `rgb(${r * arr[i][j]}, 0, ${r * arr[i][j]})`;
                 }
                 ctx.fillRect(w, h, w + sqaure, h + sqaure);
             }

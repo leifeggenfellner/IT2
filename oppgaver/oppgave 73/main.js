@@ -2,7 +2,7 @@
  * 
  * @param {number} a First number 
  * @param {number} b Second number
- * @return {number} 
+ * @return {number} Returns greatest common divisor
  */
 
 const gcd = function (a, b) {
@@ -11,9 +11,9 @@ const gcd = function (a, b) {
 
 /**
  * 
- * @param {number} m 
- * @param {number} n 
- * @return {string}
+ * @param {number} m Width of rectangle
+ * @param {number} n Height of rectangle
+ * @return {string} Returns the dimensions of the biggest integer sided square, that can be used to fill the rectangle
  */
 
 const findSquare = function (m, n) {

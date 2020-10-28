@@ -59,9 +59,6 @@ class Player {
       this.frameY = 2;
       this.moving = true;
     }
-    if ((keys["d"] || keys["ArrowRight"]) && (keys["a"] || keys["ArrowLeft"]) || (keys["w"] || keys["ArrowUp"]) && (keys["s"] || keys["ArrowDown"])) {
-      this.frameX = 0;
-    }
   }
 
   flash() {
