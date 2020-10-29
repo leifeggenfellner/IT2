@@ -16,10 +16,9 @@ for (let i = 1; i < 1000000; i++) {
 
         if (n === 1) break;
     }
+
     if (arr.length > longest) {
         num = i;
         longest = arr.length;
     }
 }
-
-console.log(num);
