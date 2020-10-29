@@ -56,4 +56,6 @@ generate(N, nums);
 
 const sorted = quickSort(permutations, 0, permutations.length - 1);
 
-const ans = sorted.slice(999999, 1000000);
+const ans = sorted.slice(999999, 1000000).pop();
+
+console.log(ans);
