@@ -11,9 +11,10 @@ const sumAnsFact = n => {
         sum *= i;
     }
 
-    let arr = sum.toString().split('');
-    for (let i = 0; i < arr.length; i++) arr[i] = +arr[i];
+    let arr = sum.toString().split('').map(x => +x);
     let ans = arr.reduce((a, b) => Number(a) + Number(b), 0);
     
     return ans;
 }
+
+console.log(sumAnsFact(6));
