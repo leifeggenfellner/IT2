@@ -25,10 +25,8 @@ function sumAmicable(n) {
     const amicable = new Array();
 
     for (let i = 0; i < n; i++) {
-        let divs1 = divisors(i);
-        let sum1 = divs1.reduce((a, b) => Number(a) + Number(b), 0);
-        let divs2 = divisors(sum1);
-        let sum2 = divs2.reduce((a, b) => Number(a) + Number(b), 0);
+        let sum1 = divisors(i).reduce((a, b) => Number(a) + Number(b), 0);
+        let sum2 = divisors(sum1).reduce((a, b) => Number(a) + Number(b), 0);
         if (i === sum2 && i !== sum1) {
             amicable.push(i);
         }
