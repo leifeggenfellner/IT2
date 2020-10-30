@@ -1,6 +1,9 @@
-const binom = function (n, k) {
-    if (k === n || k === 0) return 1;
-    else return binom(n - 1, k - 1) + binom(n - 1, k);
+const paths = n => {
+    let ans = 1;
+    for (let i = 1; i <= n; i++) {
+        ans = ans * (n + i) / i;
+    }
+    return ans;
 }
 
-console.log(binom(400, 40));
+console.log(paths(20));
