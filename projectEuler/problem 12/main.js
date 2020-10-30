@@ -1,4 +1,4 @@
-function triangleDivs(n) {
+function triangleDivs() {
     function divisors(n) {
         let numFactors = 0;
         for (let i = 1; i < Math.ceil(Math.sqrt(n)) + 1; i++) {
@@ -25,3 +25,5 @@ function triangleDivs(n) {
         }
     }
 }
+
+console.log(triangleDivs());
