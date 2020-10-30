@@ -25,5 +25,3 @@ function triangleDivs() {
         }
     }
 }
-
-console.log(triangleDivs());
