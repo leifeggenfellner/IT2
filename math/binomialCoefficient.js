@@ -11,5 +11,3 @@ const binom = (n, k) => {
 
     return ans;
 }
-
-console.log(binom(34, 7));
