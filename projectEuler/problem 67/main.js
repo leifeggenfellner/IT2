@@ -29,6 +29,4 @@ fs.readFile('projectEuler/problem 67/triangle.txt', (err, data) => {
         }
         return dp[0];
     }
-
-    console.log(maxTotal(pyramid));
 });
