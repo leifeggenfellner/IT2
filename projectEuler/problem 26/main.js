@@ -5,24 +5,25 @@
  */
 
 const isRecurring = (dnum) => {
-    let res = "";
+    let result = "";
 
     let seen = {};
     let rem = 1 % dnum;
 
     while ((rem !== 0) && !(rem in seen)) {
-        seen[rem] = res.length;
+        seen[rem] = result.length;
         rem *= 10;
 
         let resPart = Math.floor(rem / dnum);
-        res += resPart.toString();
+        result += resPart.toString();
 
         rem = rem % dnum;
     }
 
     if (rem === 0) return "".length;
-    else return res.slice(seen[rem]).length;
+    else return result.slice(seen[rem]).length;
 }
+
 
 /**
  * @returns The number which has the longest recurring cycle
@@ -32,7 +33,7 @@ const longestCycle = () => {
     let longest = 0;
     let d = 0;
 
-    for (let i = 0; i < 1000; i++) {
+    for (let i = 1; i < 1000; i++) {
         if (isRecurring(i) > longest) {
             longest = isRecurring(i);
             d = i;
