@@ -1,3 +1,8 @@
+/**
+ * @author Leif Eggenfellner
+ * @todo Move out of the process of getting data from the file
+ */
+
 const fs = require('fs');
 
 fs.readFile('projectEuler/problem 67/triangle.txt', (data) => {

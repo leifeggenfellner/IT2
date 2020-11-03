@@ -1,6 +1,7 @@
 /**
  * 
- * @param {Number} n Multiply the final
+ * @param {Number} n The area of the square
+ * @returns Returns the sum of all diagonal numbers in the square
  */
 
 const sumSpiral = (n = 1001 * 1001) => {
