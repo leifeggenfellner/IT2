@@ -1,12 +1,11 @@
 const fs = require('fs');
 
-fs.readFile('projectEuler/problem 67/triangle.txt', (err, data) => {
-    if (err) throw err;
-
+fs.readFile('projectEuler/problem 67/triangle.txt', (data) => {
     let str = data.toString();
     let arr = new Array();
     let pyramid = new Array();
     let vals = str.split("\n");
+
     vals.forEach(e => {
         arr.push(e.split(" "));
     });
@@ -27,6 +26,8 @@ fs.readFile('projectEuler/problem 67/triangle.txt', (err, data) => {
                 dp[j] = triangle[i][j] + Math.max(dp[j], dp[j + 1]);
             }
         }
+        
         return dp[0];
     }
 });
+
