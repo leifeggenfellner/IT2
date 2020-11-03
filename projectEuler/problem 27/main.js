@@ -1,7 +1,7 @@
 /**
- * 
+ * @author Leif Eggenfellner
  * @param {Number} n The number to check if is prime
- * @returns Returns a boolean value dependant on if n is a prime number or not
+ * @returns {Boolean} Returns a boolean value dependant on if n is a prime number or not
  */
 
 const isPrime = n => {
@@ -15,7 +15,7 @@ const isPrime = n => {
  * @param {Number} n 
  * @param {Number} a 
  * @param {Number} b 
- * @returns Returns the result of the function n**2 + a*n + b
+ * @returns {Number} Returns the result of the function n**2 + a*n + b
  */
 
 const quadraticFunction = (n, a, b) => {
@@ -26,7 +26,7 @@ const quadraticFunction = (n, a, b) => {
  * 
  * @param {Number} a 
  * @param {Number} b
- * @returns Returns the number of times the result of quaraticFunction() has been consecutive primes
+ * @returns {Number} Returns the number of times the result of quaraticFunction() has been consecutive primes
  */
 
 const consecutivePrimes = (a, b) => {
@@ -40,7 +40,7 @@ const consecutivePrimes = (a, b) => {
 /**
  * 
  * @param {Number} limit The limit of the loop
- * @returns Returns a list of all primes from 1 to limit 
+ * @returns {Array.<Number>} Returns an array of all primes from 1 to limit 
  */
 
 const primeList = limit => {
@@ -54,7 +54,7 @@ const primeList = limit => {
 }
 
 /**
- * @returns Returns the products of the coefficients that produces the maximum number of primes for consecutive values of n;
+ * @returns {Number} Returns the products of the coefficients that produces the maximum number of primes for consecutive values of n;
  */
 
 const longestConsecutive = () => {

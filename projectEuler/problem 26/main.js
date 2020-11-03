@@ -1,6 +1,6 @@
 /**
- * 
- * @param {number} dnum The denumerator
+ * @author Leif Eggenfellner
+ * @param {Number} dnum The denumerator
  * @returns  Returns the length of the recurring cycle
  */
 
@@ -23,7 +23,6 @@ const isRecurring = (dnum) => {
     if (rem === 0) return "".length;
     else return result.slice(seen[rem]).length;
 }
-
 
 /**
  * @returns The number which has the longest recurring cycle

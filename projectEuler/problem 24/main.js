@@ -1,59 +1,42 @@
-const nums = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
-let N = nums.length;
-let permutations = new Array();
+/**
+ * @author Leif Eggenfellner
+ */
 
-const generate = (n, arr) => {
-    if (n === 1) {
-        permutations.push(arr.join(''));
-    } else {
-        generate(n - 1, arr);
+const permutations = new Array();
+
+/**
+ * @param {Number} n 
+ * @param {Array.<Number>} a
+ */
+
+const generate = (n, a) => {
+    if (n === 1) permutations.push(a.join(''));
+    else {
+        generate(n - 1, a);
 
         for (let i = 0; i < n - 1; i++) {
             if (n % 2 === 0) {
-                let temp = arr[i];
-                arr[i] = arr[n - 1];
-                arr[n - 1] = temp;
+                let temp = a[i];
+                a[i] = a[n - 1];
+                a[n - 1] = temp;
             } else {
-                let temp = arr[0];
-                arr[0] = arr[n - 1];
-                arr[n - 1] = temp;
+                let temp = a[0];
+                a[0] = a[n - 1];
+                a[n - 1] = temp;
             }
-            generate(n - 1, arr);
+            generate(n - 1, a);
         }
     }
 }
 
-function partition(arr, low, high) {
-    temp = 0;
+/**
+ * @returns {Number} Returns the millionth lexiographic permutation of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9
+ */
 
-    let i = low - 1;
-    pivot = arr[high];
+const solve = () => {
+    const nums = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
+    const N = nums.length;
 
-    for (let j = low; j < high; j++) {
-        if (arr[j] < pivot) {
-            i++;
-            temp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = temp;
-        }
-    }
-    temp = arr[i + 1];
-    arr[i + 1] = arr[high];
-    arr[high] = temp;
-    return i + 1;
+    generate(N, nums);
+    return permutations.sort().slice(999999, 1000000).pop();
 }
-
-function quickSort(arr, low, high) {
-    if (low < high) {
-        pi = partition(arr, low, high);
-        quickSort(arr, low, pi - 1);
-        quickSort(arr, pi + 1, high);
-    }
-    return arr;
-}
-
-generate(N, nums);
-
-const sorted = quickSort(permutations, 0, permutations.length - 1);
-
-const ans = sorted.slice(999999, 1000000).pop();

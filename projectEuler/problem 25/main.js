@@ -1,6 +1,6 @@
 /**
- * 
- * @param {number} n BigInt 
+ * @author Leif Eggenfellner
+ * @param {Number} n BigInt 
  */
 
 const fib = (n) => {
@@ -15,7 +15,6 @@ const fib = (n) => {
 }
 
 /**
- * 
  * @param {Number} i BigInt
  */
 

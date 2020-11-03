@@ -1,10 +1,10 @@
 /**
  * @author Leif Eggenfellner
- * @returns Returns the sum of the numbers that can be written as the sum of fifth powers of their digits
+ * @returns {Number} Returns the sum of the numbers that can be written as the sum of fifth powers of their digits
 */
 
 const sumFifthPower = () => {
-    let nums = new Array();
+    const nums = new Array();
     
     for (let i = 10; i <= Math.pow(10, 6); i++) {
         let str = i.toString();

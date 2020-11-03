@@ -1,7 +1,8 @@
 /**
  * 
- * @param {number} n The value you want all divisors of.
- * @returns Returns all divisors of n.
+ * @author Leif Eggenfellner
+ * @param {Number} n The value you want all divisors of.
+ * @returns Returns the sum of all divisors of n.
  */
 
 const divisors = n => {
@@ -17,8 +18,8 @@ const divisors = n => {
 
 /**
  * 
- * @param {number} n
- * @returns Returns a bool value based on if n is a abundent number or not.
+ * @param {Number} n
+ * @returns {Boolean} Returns a bool value based on if n is a abundent number or not.
  */
 
 const checkAbundance = n => {
@@ -26,10 +27,10 @@ const checkAbundance = n => {
 }
 
 /**
- * @returns Returns the sum of all non-abundant numbers
+ * @returns {Number} Returns the sum of all non-abundant numbers
  */
 
-const sumnums = () => {
+const sumNums = () => {
     const abundent = new Array();
 
     for (let i = 0; i <= 28123; i++) {

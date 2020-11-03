@@ -1,13 +1,12 @@
 /**
- * 
  * @param {Number} n The area of the square
- * @returns Returns the sum of all diagonal numbers in the square
+ * @returns {Number} Returns the sum of all diagonal numbers in the square
  */
 
 const sumSpiral = (n = 1001 * 1001) => {
     let side = 1
     let sum = 1;
-    let ans = new Array();
+    const ans = new Array();
 
     while (side < Math.sqrt(n)) {
         side += 2;

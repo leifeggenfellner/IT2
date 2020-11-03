@@ -1,6 +1,6 @@
 /**
  * @author Leif Eggenfellner
- * @returns Returns the length of the array without duplicates
+ * @returns {Number} Returns the length of the array without duplicates
  */
 
 const distinctPowers = () => {
