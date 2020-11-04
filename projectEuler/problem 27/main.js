@@ -6,7 +6,7 @@
 
 const isPrime = n => {
     for (let i = 2; i <= Math.sqrt(n); i++)
-        if(n % i === 0) return false; 
+        if (n % i === 0) return false;
     return n > 1;
 }
 
@@ -44,7 +44,7 @@ const consecutivePrimes = (a, b) => {
  */
 
 const primeList = limit => {
-    let primes = [1, 2];
+    let primes = [2];
 
     for (let i = 3; i <= limit; i += 2) {
         if (isPrime(i)) primes.push(i);
@@ -54,12 +54,12 @@ const primeList = limit => {
 }
 
 /**
- * @returns {Number} Returns the products of the coefficients that produces the maximum number of primes for consecutive values of n;
+ * @returns {Number} Returns the products of the coefficients that produces the maximum number of primes for consecutive values of n
  */
 
 const longestConsecutive = () => {
     let primes = primeList(1000);
-    let longest = [0, 0, 0];    
+    let longest = [0, 0, 0];
 
     for (let a = -999; a <= 999; a += 2) {
         for (let i = 0; i < primes.length; i++) {
