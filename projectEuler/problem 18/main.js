@@ -1,4 +1,8 @@
-let str = `75
+/**
+ * @author Leif Eggenfellner
+ */
+
+const str = `75
 95 64
 17 47 82
 18 35 87 10
@@ -14,23 +18,29 @@ let str = `75
 63 66 04 68 89 53 67 30 73 16 69 87 40 31
 04 62 98 27 23 09 70 98 73 93 38 53 60 04 23`;
 
-let arr = new Array();
-let pyramid = new Array();
-let vals = str.split("\n");
+const arr = new Array();
+const pyramid = new Array();
+const vals = str.split("\n");
 vals.forEach(e => {
     arr.push(e.split(" "));
 });
 
 for (let i = 0; i < arr.length; i++) {
-    let temp = new Array();
+    const temp = new Array();
     arr[i].forEach(e => {
         temp.push(parseInt(e));
     });
     pyramid.push(temp);
 }
 
+/**
+ * 
+ * @param {Array.<Number>} triangle
+ * @returns {Number} Returns the maximum total from top to bottom of the triangle
+ */
+
 const maxTotal = triangle => {
-    let dp = triangle[triangle.length - 1].slice();
+    const dp = triangle[triangle.length - 1].slice();
 
     for (let i = triangle.length - 2; i > -1; i--) {
         for (let j = 0; j < i + 1; j++) {
@@ -39,5 +49,3 @@ const maxTotal = triangle => {
     }
     return dp[0];
 }
-
-console.log(maxTotal(pyramid));

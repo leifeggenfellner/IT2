@@ -1,8 +1,14 @@
-let nums = new Array();
+/**
+ * @author Leif Eggenfellner
+ * @returns {Number} Returns the sum fo the even valued terms of the Fibonacci sequence whose values do not exceed four million
+ */
 
-function fib(arr) {
+const fib = () => {
+    const arr = new Array();
+
     let fib = 1;
     let fibPrev = 0;
+
     while (1) {
         let temp = fib;
         fib += fibPrev;
@@ -16,9 +22,6 @@ function fib(arr) {
             }
         }
     }
-    let sum = arr.reduce((a, b) => a + b, 0)
-    return sum;
+
+    return arr.reduce((a, b) => a + b, 0)
 }
-
-console.log(fib(nums));
-

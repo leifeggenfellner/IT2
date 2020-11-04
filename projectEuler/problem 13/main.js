@@ -1,3 +1,7 @@
+/**
+ * @author Leif Eggenfellner
+ */
+
 const numStr =
     `37107287533902102798797998220837590246510135740250
 46376937677490009712648124896970078050417018260538
@@ -100,6 +104,24 @@ const numStr =
 20849603980134001723930671666823555245252804609722
 53503534226472524250874054075591789781264330331690`
 
-let nums = numStr.split("\n");
-let sum = nums.reduce((a, b) => Number(a) + Number(b), 0);
-let ans = Number(sum.toString().replace(/\./g, "").slice(0, 10));
+/**
+ * 
+ * @param {String} str The string to convert
+ * @returns {Array.<String>} Returns an array of strings with the numbers
+ */
+
+const toArr = str => {
+    return str.split("\n");
+}
+
+/**
+ * 
+ * @param {String} str
+ * @returns {Number} Returns the first ten digits of the sum of the number in the string
+ */
+
+const sumStr = (str) => {
+    let nums = toArr(str);
+    return Number(nums.reduce((a, b) => Number(a) + Number(b), 0).toString().replace(/\./g, "").slice(0, 10));
+}
+

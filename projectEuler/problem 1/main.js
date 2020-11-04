@@ -1,7 +1,16 @@
-function divideBy(n) {
-    let max = 999;
-    let x = Math.floor(max / n);
-    return Math.floor(n * (x * (x + 1)) / 2);
-}
+/**
+ * 
+ * @author Leif Eggenfellner
+ * @param {Number} n The number of which you like to find the sum of all the multiples of 3 or 5 below
+ * @returns {Number} Returns the sum of all the multiples of 3 or 5 below n
+ */
 
-console.log(divideBy(3) + divideBy(5) - divideBy(15));
+const sumMultiples = (n = 1000) => {
+    let sum = 0;
+    for (let i = 1; i < n; i++) {
+        if (i % 3 === 0 || i % 5 === 0) {
+            sum += i;
+        }
+    }
+    return sum;
+}

@@ -27,7 +27,7 @@ fs.readFile('projectEuler/problem 67/triangle.txt', (err, data) => {
     /**
      * 
      * @param {Array.<Number>} triangle 
-     * @returns {Number} Returns the highest sum from the pyramid/triangle
+     * @returns {Number} Returns the maximum total from top to bottom of the triangle
      */
 
     const maxTotal = triangle => {

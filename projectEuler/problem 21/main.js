@@ -1,7 +1,7 @@
 /**
  * 
- * @param {number} n The value you want all divisors of.
- * @returns Returns all divisors of n.
+ * @param {Number} n The value you want all divisors of.
+ * @returns {Array.<Number>} Returns all divisors of n.
  */
 
 function divisors(n) {
@@ -17,11 +17,11 @@ function divisors(n) {
 
 /**
  * 
- * @param {number} n The value of which you want the sum of all amicable numbers under.
+ * @param {Number} n The value of which you want the sum of all amicable numbers under.
  * @returns Returns the sum of all amicable numbers under n.
  */
 
-function sumAmicable(n) {
+function sumAmicable(n = 10000) {
     const amicable = new Array();
 
     for (let i = 0; i < n; i++) {
@@ -32,7 +32,5 @@ function sumAmicable(n) {
         }
     }
 
-    let ans = amicable.reduce((a, b) => Number(a) + Number(b), 0);
-
-    return ans;
+    return amicable.reduce((a, b) => Number(a) + Number(b), 0);
 }

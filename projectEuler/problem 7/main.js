@@ -1,6 +1,8 @@
 /**
  * 
- * @param {number} n 
+ * @author Leif Eggenfellner
+ * @param {Number} n The number
+ * @returns {Number} Returns the next prime number from n
  */
 
 function nextPrime(n) {
@@ -19,6 +21,11 @@ function nextPrime(n) {
     return n === 2 ? 3 : 2;
 }
 
+/**
+ * 
+ * @param {Number} n The n-th prime number
+ * @returns {Number} Returns the n-th prime number
+ */
 
 function generatePrime(n) {
     let val = 0,

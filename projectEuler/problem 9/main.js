@@ -1,9 +1,10 @@
 /**
- * 
- * @param {number} n 
+ * @author Leif Eggenfellner
+ * @param {Number} n The nymber the Pythagorean triplet shall be equal to
+ * @returns {Number} Returns the product of a, b, and c
  */
 
-function findTrinagle(n) {
+const findTrinagle = (n = 1000) => {
   for (let c = 0; c < n; c++) {
     for (let b = 0; b < n; b++) {
       for (let a = 0; a < n; a++) {
