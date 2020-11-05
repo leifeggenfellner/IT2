@@ -9,7 +9,7 @@ const permutations = new Array();
  * @param {Array.<Number>} a
  */
 
-const generate = (n, a) => {
+void function generate(n, a) {
     if (n === 1) permutations.push(a.join(''));
     else {
         generate(n - 1, a);
