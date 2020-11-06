@@ -10,7 +10,7 @@ const isPandigital = n => {
 
     while (n > 0) {
         m += 1 << n % 10;
-        n = Math.floor(n / 10);        
+        n = Math.floor(n / 10);
 
         i++;
     }
