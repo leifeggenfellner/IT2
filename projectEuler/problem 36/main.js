@@ -1,6 +1,5 @@
 /**
  * 
- * @author Leif Eggenfellner
  * @param {Number} n The number to check if is a palindrome
  * @param {Number} base The base of the number
  * @returns {Boolean} Returns a boolean value based on if the number is a palindrome

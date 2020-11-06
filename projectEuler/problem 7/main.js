@@ -1,6 +1,5 @@
 /**
  * 
- * @author Leif Eggenfellner
  * @param {Number} n The number
  * @returns {Number} Returns the next prime number from n
  */

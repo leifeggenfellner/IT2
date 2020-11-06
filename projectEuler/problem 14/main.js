@@ -1,6 +1,5 @@
 /**
  * 
- * @author Leif Eggenfellner
  * @param {Number} n The limit
  * @returns {Number} Returns the number with the longest chain
  */

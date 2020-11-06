@@ -1,7 +1,3 @@
-/**
- * @author Leif Eggenfellner
- */
-
 const permutations = new Array();
 
 /**

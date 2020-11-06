@@ -1,5 +1,5 @@
 /**
- * @author Leif Eggenfellner
+ * 
  * @param {Number} n The nymber the Pythagorean triplet shall be equal to
  * @returns {Number} Returns the product of a, b, and c
  */

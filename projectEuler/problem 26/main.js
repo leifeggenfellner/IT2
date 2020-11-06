@@ -1,5 +1,5 @@
 /**
- * @author Leif Eggenfellner
+ * 
  * @param {Number} dnum The denumerator
  * @returns  Returns the length of the recurring cycle
  */

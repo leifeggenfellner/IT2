@@ -1,6 +1,5 @@
 /**
  * 
- * @author Leif Eggenfellner 
  * @param {Number} n The number you wish to find the prime factors of
  * @returns {Number} Returns the largest prime factor of the number n
  */

@@ -1,7 +1,3 @@
-/**
- * @author Leif Eggenfellner
- */
-
 const fs = require('fs');
 
 fs.readFile('projectEuler/problem 67/triangle.txt', (err, data) => {

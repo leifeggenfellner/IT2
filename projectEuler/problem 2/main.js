@@ -1,5 +1,5 @@
 /**
- * @author Leif Eggenfellner
+ * 
  * @returns {Number} Returns the sum fo the even valued terms of the Fibonacci sequence whose values do not exceed four million
  */
 

@@ -1,5 +1,5 @@
 /**
- * @author Leif Eggenfellner
+ * 
  * @param {Number} n BigInt 
  */
 
@@ -7,7 +7,7 @@ const fib = (n) => {
     let arr = new Array(n + 1n);
     arr[1] = 1n;
     arr[2] = 1n;
-    for (let i = 3n; i < n + 1n; i++){
+    for (let i = 3n; i < n + 1n; i++) {
         arr[i] = arr[i - 1n] + arr[i - 2n];
     }
 

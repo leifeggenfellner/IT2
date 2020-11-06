@@ -1,6 +1,5 @@
 /**
  * 
- * @author Leif Eggenfellner
  * @param {Number} n Side length in square grid
  * @returns {Number} Returns how many such routes are there through a nxn grid
  */

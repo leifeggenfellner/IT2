@@ -1,7 +1,3 @@
-/**
- * @author Leif Eggenfellner
- */
-
 const str = `75
 95 64
 17 47 82

@@ -1,5 +1,5 @@
 /**
- * @author Leif Eggenfellner
+ * 
  * @param {Number} n The number to check if is a pandigital number
  * @returns {Boolean} Returns boolean values based on if the n is a pandigital number 
  */

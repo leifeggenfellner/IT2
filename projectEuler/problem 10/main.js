@@ -1,6 +1,5 @@
 /**
  * 
- * @author Leif Eggenfellner
  * @param {Number} l The limit
  * @returns {Number} Returns the sum of all primes below l
  */

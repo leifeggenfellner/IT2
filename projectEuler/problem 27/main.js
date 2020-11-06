@@ -1,5 +1,5 @@
 /**
- * @author Leif Eggenfellner
+ * 
  * @param {Number} n The number to check if is prime
  * @returns {Boolean} Returns a boolean value dependant on if n is a prime number or not
  */

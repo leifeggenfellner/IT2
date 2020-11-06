@@ -1,8 +1,4 @@
 /**
- * @author Leif Eggenfellner
- */
-
-/**
  * 
  * @param {Number} n1 
  * @param {Number} n2

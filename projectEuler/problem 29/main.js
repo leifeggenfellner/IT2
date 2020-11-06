@@ -1,5 +1,5 @@
 /**
- * @author Leif Eggenfellner
+ * 
  * @returns {Number} Returns the length of the array without duplicates
  */
 

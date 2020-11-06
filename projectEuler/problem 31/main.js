@@ -1,5 +1,5 @@
 /**
- * @author Leif Eggenfellner
+ * 
  * @param {Number} t Target
  * @param {Array.<Number>} c Coins
  * @returns {Number} Returns how many different ways can £2 be made using any number of coins

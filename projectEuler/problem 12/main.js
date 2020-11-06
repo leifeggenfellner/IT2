@@ -1,5 +1,5 @@
 /**
- * @author Leif Eggenfellner
+ * 
  * @returns {Number} Returns the first triangle number to have over five hundred divisors
  */
 

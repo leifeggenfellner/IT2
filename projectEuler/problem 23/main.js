@@ -1,6 +1,5 @@
 /**
  * 
- * @author Leif Eggenfellner
  * @param {Number} n The value you want all divisors of.
  * @returns Returns the sum of all divisors of n.
  */
@@ -23,7 +22,7 @@ const divisors = n => {
  */
 
 const checkAbundance = n => {
-    return (divisors(n) > n) ?  true :  false;
+    return (divisors(n) > n) ? true : false;
 }
 
 /**
@@ -38,9 +37,9 @@ const sumNums = () => {
             abundent.push(i);
         }
     }
-    
+
     let sums = new Array(28124).fill(0);
-    
+
     for (let i = 0; i < abundent.length; i++) {
         for (let j = i; j < abundent.length; j++) {
             let sum = abundent[i] + abundent[j];
@@ -49,7 +48,7 @@ const sumNums = () => {
             }
         }
     }
-    
+
     let total = 0;
     for (let i = 0; i < sums.length; i++) {
         if (sums[i] === 0) {

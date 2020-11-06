@@ -1,5 +1,5 @@
 /**
- * @author Leif Eggenfellner
+ * 
  * @returns {Number} Returns the amount of letters used to write out the numers from 1 to 1000
  */
 
@@ -9,7 +9,7 @@ const numsWrittenOut = () => {
     const hundred = 7;
     const and = 3;
     let letters = 11;
-    
+
     for (let x = 0; ++x < 1000;) {
         let temp = (x % 100);
         if (temp < 20) letters += first[temp];
