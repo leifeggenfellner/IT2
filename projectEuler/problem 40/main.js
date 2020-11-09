@@ -11,7 +11,12 @@ const findNum = () => {
         i++;
     }
 
-    const nums = new Array(str[1], str[10], str[100], str[1000], str[10000], str[100000], str[1000000]);
+    const nums = new Array();
+
+    for (let i = 0; i <= 6; i++) {
+        nums.push(str[10 ** i]);
+    }
+
 
     return nums.reduce((a, b) => a * b, 1);
 }
