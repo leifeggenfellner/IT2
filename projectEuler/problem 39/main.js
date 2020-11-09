@@ -1,6 +1,6 @@
 /**
  * 
- * @param {Number} n The number of the max p;
+ * @param {Number} n The number of the max p.
  * @returns {Number} Returns the value of p ≤ n, where the number of solutions for right angle triangles with integral length sides, {a,b,c} is maximised.
  */
 
