@@ -24,6 +24,10 @@ class Fraction {
         let numerator = this.a + fraction.a;
         let divisor = this.b;
 
+        if (divisor === 1) return `${numerator}`;
+        else if (numerator === divisor) return "1";
+
+
         return `${numerator}/${divisor}`;
     }
 
@@ -48,6 +52,7 @@ class Fraction {
         let divisor = this.b;
 
         if (divisor === 1) return `${numerator}`;
+        else if (numerator === divisor) return "1";
 
         return `${numerator}/${divisor}`;
     }
@@ -62,6 +67,8 @@ class Fraction {
         divisor /= commonDivisor;
 
         if (divisor === 1) return `${numerator}`;
+        else if (numerator === divisor) return "1";
+
 
         return `${numerator}/${divisor}`;
     }
@@ -76,6 +83,7 @@ class Fraction {
         divisor /= commonDivisor;
 
         if (divisor === 1) return `${numerator}`;
+        else if (numerator === divisor) return "1";
 
         return `${numerator}/${divisor}`;
     }
