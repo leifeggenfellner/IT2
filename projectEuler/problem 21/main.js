@@ -6,8 +6,8 @@
 
 function divisors(n) {
     const divs = new Array();
-    for (let i = 0; i <= n; i++) {
-        if (n % i === 0 && i !== n) {
+    for (let i = 0; i < n; i++) {
+        if (n % i === 0) {
             divs.push(i);
         }
     }
