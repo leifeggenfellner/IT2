@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Game of Life</title>
+</head>
+
+<body>
+    <fieldset id="box">
+        <legend>Game of Life</legend>
+        <canvas id="myCanvas" width="400px" height="400px"></canvas>
+        <section id="settings">
+            <label for="output1" id="gens">Generations</label>
+            <output id="output1">0</output>
+            <label for="output2" id="population">Current population</label>
+            <output id="output2">0</output>
+            <label for="simSpeed" id="speedLabel">Simulation speed</label>
+            <input type="range" min="0" max="100" value="10" id="simSpeed">
+            <output id="speedTxt">0 generations per second</output>
+            <input type="button" value="Start" id="startBtn">
+        </section>
+    </fieldset>
+</body>
+
+</html>
