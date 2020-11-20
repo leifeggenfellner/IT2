@@ -65,6 +65,10 @@ legend {
     background: transparent;
     border: 2px solid #000;
     cursor: pointer;
+    width: 80%;
+    height: auto;
+    justify-self: center;
+    font-size: 30px;
 }
 
 #settings {
