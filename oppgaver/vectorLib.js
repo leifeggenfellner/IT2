@@ -125,10 +125,10 @@ class Vector2d {
         return new Vector2d(this.x, this.y);
     }
 
-    static round(n, d) {
-        const num = 10 ** d;
-        return Math.round(n + num) / num;
-    }
+    /**
+     * 
+     * @param {Number} angle The angle (in radians) you wish to rotate the vector.
+     */
 
     rotate(angle) {
         const x = this.x;
@@ -136,6 +136,12 @@ class Vector2d {
         this.x = Math.cos(angle) * x - Math.sin(angle) * y;
         this.y = Math.sin(angle) * x + Math.cos(angle) * y;
     }
+
+    /**
+     * 
+     * @param {object} v The vector you wish to check with.
+     * @returns {Boolean} Returns wether the vectors are parallel or not.
+     */
 
     isParallel(v) {
         return this.x / this.y === v.x / v.y ? true : false;
