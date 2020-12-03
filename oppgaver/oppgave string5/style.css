@@ -1,0 +1,21 @@
+input {
+    grid-area: range;
+}
+
+#length {
+    grid-area: length;
+    margin-left: 10px;
+}
+
+#output {
+    grid-area: output;
+    place-self: center;
+}
+
+body {
+    width: 400px;
+    display: grid;
+    grid-template-areas: 
+    "range range length"
+    "output output output";
+}

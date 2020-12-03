@@ -13,4 +13,3 @@ wordInput.addEventListener("input", () => {
         output.innerText = occurances;
     }
 });
-
