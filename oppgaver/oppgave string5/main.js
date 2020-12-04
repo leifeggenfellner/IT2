@@ -26,6 +26,7 @@ const letterCount = str => {
 }
 
 const checkPwd = pwd => {
+    const lengthGood = pwd.length > 7 ? true : false;
     const containNum = /\d/.test(pwd);
     let onlyValidChars = true;
     let oneSmall = false;
@@ -40,17 +41,20 @@ const checkPwd = pwd => {
     const occurances = letterCount(pwd);
     for (let i = 0; i < occurances.length; i++) if (occurances[i][1] > 2) lessOccurances = false;
 
-    return containNum && onlyValidChars && oneSmall && oneBig && lessOccurances ? true : false;
+    return lengthGood && containNum && onlyValidChars && oneSmall && oneBig && lessOccurances ? true : false;
 }
 
-const range = document.getElementById("lengthRange");
-const length = document.getElementById("length");
+const pwdLength = document.getElementById("lengthRange");
 const output = document.getElementById("output");
+const quality = document.getElementById("quality");
 
-range.addEventListener("input", () => {
-    const size = parseInt(range.value);
-    const password = genPass(size);
-    length.innerText = size;
-    output.innerText = password;
-    console.log(checkPwd(password));
+pwdLength.addEventListener("input", () => {
+    if (pwdLength.value != 0 || pwdLength.value !== NaN) {
+        const size = parseInt(pwdLength.value);
+        const password = genPass(size);
+        const pwdQuality = checkPwd(password);
+        if (pwdQuality) quality.innerText = `This password is strong`;
+        else if (!pwdQuality) quality.innerText = `This password is weak`;
+        output.innerText = password;
+    }
 });

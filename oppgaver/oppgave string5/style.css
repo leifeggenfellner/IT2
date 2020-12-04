@@ -1,21 +1,45 @@
-input {
+#lengthRange {
     grid-area: range;
-}
-
-#length {
-    grid-area: length;
-    margin-left: 10px;
 }
 
 #output {
     grid-area: output;
-    place-self: center;
 }
 
-body {
+#quality {
+    grid-area: quality;
+}
+
+#linkCheck {
+    grid-area: link;
+}
+
+#pwd {
+    grid-area: pwd;
+}
+
+#btn {
+    grid-area: btn;
+}
+
+#result {
+    grid-area: checkAns;
+}
+
+#pwdGenBody {
     width: 400px;
     display: grid;
     grid-template-areas: 
-    "range range length"
-    "output output output";
+    "range range range"
+    "output . ."
+    "quality . ."
+    "link . .";
+}
+
+#checkBody {
+    width: 400px;
+    display: grid;
+    grid-template-areas: 
+    "pwd pwd btn"
+    "checkAns checkAns checkAns";
 }
