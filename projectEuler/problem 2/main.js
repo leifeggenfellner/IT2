@@ -10,7 +10,7 @@ const fib = () => {
     let fibPrev = 0;
 
     while (1) {
-        let temp = fib;
+        const temp = fib;
         fib += fibPrev;
         fibPrev = temp;
 
