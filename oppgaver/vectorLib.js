@@ -115,14 +115,25 @@ class Vector2d {
         this.scale(-1);
     }
 
-    angle(v) {
+    angleRad(v) {
         let angle = Math.atan2(v.y, v.x) - Math.atan2(this.y, this.x);
         if (angle < 0) angle += 2 * Math.PI;
         return angle;
     }
 
+    angleDeg(v) {
+        let angle = Math.atan2(v.y, v.x) - Math.atan2(this.y, this.x);
+        if (angle < 0) angle += 2 * Math.PI;
+        return angle * 180 / Math.PI;
+    }
+
     clone() {
         return new Vector2d(this.x, this.y);
+    }
+
+    static round(number, decimal) {
+        let f = 10 ** decimal;
+        return Math.round((number + Number.EPSILON) * f) / f;
     }
 
     /**
@@ -133,8 +144,8 @@ class Vector2d {
     rotate(angle) {
         const x = this.x;
         const y = this.y;
-        this.x = Math.cos(angle) * x - Math.sin(angle) * y;
-        this.y = Math.sin(angle) * x + Math.cos(angle) * y;
+        this.x = Vector2d.round(Math.cos(angle) * x - Math.sin(angle) * y, 10);
+        this.y = Vector2d.round(Math.sin(angle) * x + Math.cos(angle) * y, 10);
     }
 
     /**
@@ -168,4 +179,3 @@ class Vector2d {
         return new Vector2d(x, y);
     }
 }
-
