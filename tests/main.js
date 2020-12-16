@@ -93,7 +93,7 @@ const drawStickPerson = () => {
     });
 }
 
-drawStickPerson();
+window.onload = drawStickPerson();
 
 shakeItCheck.addEventListener("input", () => {
     if (shakeItCheck.checked) shakeAnim = setInterval(function () { circles[2].shakeIt() }, 1000 / 60);
@@ -101,12 +101,11 @@ shakeItCheck.addEventListener("input", () => {
 });
 
 waveCheck.addEventListener("input", () => {
+    const arm = Math.floor(Math.random() * 2) + 3;
     if (waveCheck.checked) {
-        waveAnimLeft = setInterval(() => { circles[3].wave() }, 1000 / 60);
-        waveAnimRight = setInterval(() => { circles[4].wave() }, 1000 / 60);
+        waveAnim = setInterval(() => { circles[arm].wave() }, 1000 / 60);
     }
     else {
-        clearInterval(waveAnimLeft);
-        clearInterval(waveAnimRight);
+        clearInterval(waveAnim);
     };
 });
