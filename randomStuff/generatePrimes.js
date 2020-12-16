@@ -8,3 +8,5 @@ const generatePrimes = n => {
     for (let i = 2; i <= n; i === 2 ? i++ : i += 2) if (isPrime(i)) primes.push(i);
     return primes;
 }
+
+console.log(generatePrimes(2000000));

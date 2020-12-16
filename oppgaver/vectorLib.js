@@ -11,6 +11,11 @@ class Vector2d {
         this.y = y;
     }
 
+    add(x, y) {
+        this.x += x;
+        this.y += y;
+    }
+
     /**
      * @returns {String} Returns the vector as a string.
      */
@@ -62,7 +67,7 @@ class Vector2d {
      * @param {Number} n A constant you wish to multiply with
      */
 
-    scale(n) {
+    scaleVec(n) {
         this.x *= n;
         this.y *= n;
     }
