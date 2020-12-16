@@ -102,10 +102,6 @@ shakeItCheck.addEventListener("input", () => {
 
 waveCheck.addEventListener("input", () => {
     const arm = Math.floor(Math.random() * 2) + 3;
-    if (waveCheck.checked) {
-        waveAnim = setInterval(() => { circles[arm].wave() }, 1000 / 60);
-    }
-    else {
-        clearInterval(waveAnim);
-    };
+    if (waveCheck.checked) waveAnim = setInterval(() => { circles[arm].wave() }, 1000 / 60);
+    else clearInterval(waveAnim);
 });
