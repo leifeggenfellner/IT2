@@ -1,0 +1,47 @@
+* {
+    font-family: "Conzolas", monospace;
+}
+
+#label10 {
+    grid-area: label10;
+}
+
+#desimal {
+    grid-area: input10;
+}
+
+#label16 {
+    grid-area: label16;
+}
+
+#heksadesimal {
+    grid-area: input16;
+}
+
+#label2 {
+    grid-area: label2;
+}
+
+#binær {
+    grid-area: input2;
+}
+
+fieldset {
+    width: 400px;
+    height: auto;
+    display: grid;
+    grid-template-areas: 
+    "label10 input10"
+    "label16 input16"
+    "label2 input2";
+    grid-row-gap: 6px;
+    border: 2px solid #000;
+}
+
+input {
+    border: 2px solid #000;
+}
+
+legend {
+    font-size: 20px;
+}

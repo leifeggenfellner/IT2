@@ -21,3 +21,4 @@ ctx.arc((canvas.width / 3) * 2, (canvas.height / 3) * 2, canvas.width / 3, (3 * 
 ctx.arc((canvas.width / 3), 0, (canvas.height / 3) * 2, Math.PI / 2, 2 * Math.PI, true);
 ctx.fill();
 ctx.stroke();
+ctx.closePath();

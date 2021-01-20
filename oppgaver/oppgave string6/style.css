@@ -1,0 +1,25 @@
+#input {
+    grid-area: input;
+}
+
+#range {
+    grid-area: range;
+}
+
+#shift {
+    place-self: center;
+    grid-area: shift;
+}
+
+#output {
+    grid-area: output;
+}
+
+body {
+    width: 400px;
+    display: grid;
+    grid-template-areas: 
+    "input input input"
+    "range range shift"
+    "output output output";
+}
