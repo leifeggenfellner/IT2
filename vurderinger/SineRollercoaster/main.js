@@ -97,7 +97,7 @@ function getWidth(w, arr) {
 }
 
 // Hvor mange ansikt man ønsker
-const totalFaces = 20;
+const totalFaces = 30;
 
 for (let i = 0; i < totalFaces; i++) {
     // Velger hvilket ansikt som skal lages
@@ -193,7 +193,7 @@ function animate() {
     draw();
 
     // Setter et intervall for animasjonen
-    window.setInterval(animate, 1000 / 60);
+    window.requestAnimationFrame(animate);
 }
 
 document.getElementById("btn").onclick = function () {
