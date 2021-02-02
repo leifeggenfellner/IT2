@@ -27,7 +27,7 @@ class Vector {
         this.x /= this.length;
         this.y /= this.length;
     }
-    copy() {
+    copy() {
         return new Vector(this.x, this.y);
     }
     rotate(angle) {
@@ -39,8 +39,5 @@ class Vector {
     }
     static multiply(vector, vector2) {
         return vector.x * vector2.x + vector.y * vector2.y;
-    }
-    angle() {
-
     }
 }

@@ -46,6 +46,7 @@ class Face {
      */
 
     draw() {
+
         ctx.drawImage(this.img, this.w * this.frameX, 0, this.w, this.h, this.x, this.y, this.w, this.h);
     }
 }
@@ -97,7 +98,7 @@ function getWidth(w, arr) {
 }
 
 // Hvor mange ansikt man ønsker
-const totalFaces = 30;
+const totalFaces = 12;
 
 for (let i = 0; i < totalFaces; i++) {
     // Velger hvilket ansikt som skal lages
@@ -149,7 +150,7 @@ Farten til bevegelsen.
 1 betyr at x-verdien øker med 1, ergo perioden er 1.
 Hvis verdien er 0 ville objektet gått opp og ned på samme plass.
 */
-const dx = Math.PI * 2;
+const dx = Math.PI;
 
 function update() {
     // Lager en kopi av vinkelen for å kunne endre på den
@@ -157,12 +158,14 @@ function update() {
 
     // Looper gjennom alle ansiktene for å tegne de
     faces.forEach(e => {
+        if (Math.sin(angleCopy) === 1) e.frameX = 0;
+        else if (Math.cos(angleCopy) === -1) e.frameX = 1;
+        else if (Math.sin(angleCopy) === -1) e.frameX = 2;
+
         e.update(dx, yFix, angleCopy, range);
 
         // Sender objektet tilbake til start når det går utenfor canvas
-        if (e.x > canvas.width + 201 / 3) {
-            e.x = -201 / 3;
-        }
+        if (e.x > canvas.width + 201 / 3) e.x = -201 / 3;
 
         // Minker vinkelen til sinus funksjonen for neste ansikt
         angleCopy -= Math.PI / 10;
@@ -180,6 +183,7 @@ function draw() {
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
     faces.forEach(e => e.draw());
+
 }
 
 /**
@@ -189,6 +193,7 @@ function draw() {
 function animate() {
     // Kjører funksjonen for å oppdatere anisktene
     update();
+
     // Kjører funksjonen for å tegne elementene i animasjonen
     draw();
 
@@ -196,7 +201,7 @@ function animate() {
     window.requestAnimationFrame(animate);
 }
 
-document.getElementById("btn").onclick = function () {
+document.getElementById("btn").onclick = function() {
     // Fjerner knappen
     document.getElementById("btn").style.display = "none";
 
@@ -204,6 +209,7 @@ document.getElementById("btn").onclick = function () {
     document.querySelector("body").style.cursor = "none";
 
     // Starter musikken
+    bgm.volume = 0.2;
     bgm.play();
 
     // Starter animerings prosessen
