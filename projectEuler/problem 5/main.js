@@ -38,4 +38,3 @@ const smallestNum = (n = 20) => {
     
    return num;
 }
-    
