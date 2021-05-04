@@ -80,9 +80,18 @@ ctx.beginPath();
 ctx.arc((canvas.width / 2) - (r / 2), (canvas.height / 2) - (r / 2), r, 0, 2 * Math.PI, false);
 ctx.closePath();
 
-for (let i = 0; i < closestPeople.length; i++) {
+for (let i = 0; i < people.length; i++) {
+    ctx.arc(people[i].position.x - (r/4), people[i].position.y - (r/4), r / 2, 0, 2* Math.PI, false);
+    ctx.closePath();
+}
+ctx.fillStyle = "#000";
+ctx.fill();
+
+ctx.beginPath();
+for( let i = 0; i < closestPeople.length; i++) {
     ctx.arc(closestPeople[i].position.x - (r/4), closestPeople[i].position.y - (r/4), r / 2, 0, 2* Math.PI, false);
     ctx.closePath();
 }
 
+ctx.fillStyle = "#00F";
 ctx.fill();
