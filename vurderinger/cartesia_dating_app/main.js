@@ -4,6 +4,9 @@ import {getDistance} from "./functions.js";
 const canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
 
+canvas.width = 800;
+canvas.height = 800;
+
 const genders = new Array("Male", "Female", "Both");
 const people = new Array();
 
@@ -77,7 +80,7 @@ document.querySelector("body").appendChild(output);
 const r = 5;
 
 ctx.beginPath();
-ctx.arc((canvas.width / 2) - (r / 2), (canvas.height / 2) - (r / 2), r, 0, 2 * Math.PI, false);
+ctx.arc(position.x - (r / 2), position.y - (r / 2), r, 0, 2 * Math.PI, false);
 ctx.closePath();
 
 for (let i = 0; i < people.length; i++) {
